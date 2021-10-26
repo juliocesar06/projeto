@@ -1,0 +1,323 @@
+/*geral*/
+body,
+p,
+h1,
+h2,
+input,
+textarea {
+  margin: 0;
+  font-family: roboto;
+}
+
+h2 {
+  font-size: 30px;
+}
+/*navbar*/
+#navbar {
+  background-color: #ed1f24; /* cor do fundo*/
+  color: #fff; /*cor da letra*/
+  padding: 0 15px; /* distancia da borda*/
+  height: 60px; /*altura da div*/
+}
+#navbar h2,
+#navbar ul,
+#navbar-list li,
+#navbar nav {
+  display: inline-block; /*colocando na mesma linha os itens */
+}
+#navbar h2 {
+  margin: 0;
+  line-height: 60px;
+  margin-left: 55px;
+}
+#navbar img {
+  height: 40px; /* modificando tamanho da imagem */
+  transform: rotate(45deg); /* rodando a imagem em graus(deg) */
+  position: absolute; /*posiçao em relaçoa a div */
+  top: 10px; /* distancia em relaçao ao top */
+}
+#navbar nav {
+  float: right; /* colocando itens em linha a direita */
+}
+#navbar li {
+  margin: 0 10px; /* distancia entre os elementos da lista */
+}
+#navbar-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+#navbar-list li a:hover {
+  border-bottom: 5px solid #fff;
+  color: black;
+  font-size: 21px;
+}
+
+/*==============================================================================================*/
+/* banner*/
+#main-banner {
+  height: 70vh;
+  background-image: url("../img/bg-projeto.jpg");
+  background-size: cover;
+  padding-top: 15vh;
+}
+#banner-info {
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: #fff;
+  padding: 50px;
+}
+#banner-info img {
+  height: 120px;
+  border-radius: 50%;
+  background-color: red;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#banner-info p {
+  background-color: red;
+  font-weight: bold;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+}
+/*about*/
+#about-section {
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  padding-top: 50px;
+  height: 350px;
+}
+#about-section h2 {
+  margin-bottom: 20px;
+}
+#about-section p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 25px;
+}
+/*skills*/
+#skills-section {
+  margin-top: -100px;
+  background-color: #fff;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+#skills-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.skills-container {
+  flex: 1 1 1;
+  text-align: center;
+    border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top:1px solid gray;
+  border-bottom:1px solid gray;
+}
+}
+.skills-container:hoper {
+  border-right: 2px solid gold;
+  border-left: 2px solid gold;
+}
+.central {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top:1px solid gray;
+  border-bottom:1px solid gray;
+}
+.skills-container h3 {
+  color: #ed1f24;
+  font-size: 24px;
+}
+.skills-container img {
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-top: 1px solid #ed1f24;
+  border-left: 1px solid #ed1f24;
+  border-bottom: 4px solid #ed1f24;
+  border-right: 4px solid #ed1f24;
+}
+.subtitle {
+  color: #ed1f24;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+/*jobs*/
+
+#jobs-section {
+  text-align: center;
+  padding-top: 50px;
+}
+#jobs-section h2 {
+  color: #ed1f24;
+  margin-bottom: 30px;
+}
+#jobs-section p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#jobs-section p a {
+  color: #ed1f24;
+}
+
+.jobs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.job-box {
+  flex: 1 1 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 300px;
+  background-size: cover;
+  border-right: 2px solid #ed1f24;
+  border-bottom: 3px solid #ed1f24;
+}
+.proj1 {
+  background-image: url(../img/proj1.jpg);
+}
+.proj2 {
+  background-image: url(../img/proj2.jpg);
+}
+.proj3 {
+  background-image: url(../img/proj3.jpg);
+}
+
+/*footer*/
+footer {
+  padding: 50px 0;
+  background-color: #ed1f24;
+  color: #fff;
+  text-align: center;
+}
+footer img {
+  height: 50px;
+  margin: 30px 0;
+  align-items: center;
+}
+footer p {
+  margin-top: 25px;
+}
+footer form {
+  width: 400px;
+  margin: auto;
+}
+footer input,
+footer textarea {
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+}
+.detail {
+  font-weight: bold;
+}
+/* responsivo celulares -media query*/
+
+@media (max-width: 450px) {
+  /*geral*/
+  p,
+  input,
+  textarea,
+  #navbar-list a {
+    font-size: 1.2rem;
+  }
+  /*navbar*/
+  #navbar h2 {
+    display: none;
+  }
+  #navbar img {
+    top: 9px;
+  }
+  #navbar ul {
+    margin-top: 1.1rem;
+  }
+  /*banner*/
+  #main-banner {
+    height: 40vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+  #banner-info {
+    width: 60%;
+  }
+  #banner-info p,
+  #banner-info h1 {
+    margin: 0;
+    width: auto;
+  }
+  /* about*/
+  #about-section {
+    padding: 2rem;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 40px;
+  }
+  /*skills*/
+  #skills-section {
+    margin-top: -35px;
+    width: 90%;
+  }
+  #skills-section .container {
+    flex-direction: column;
+    
+    }
+  .skills-container h3, .skills-container .subtitle{
+    font-size: 1.3rem;
+  }
+  .skills-container {
+    padding: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px 
+  }
+.skills-container .central{
+  border-top: 1px solid #ccc;}
+
+/*jobs*/
+.jobs-container{
+  flex-direction: column;
+  margin: 10px;
+}
+.job-box{
+ flex: 1 1 300px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+
+}
+footer{
+  padding: auto;
+  border-radius: 5%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#nome,#email,#textarea{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer > form > input{
+  width: 80%;
+    margin-left: auto;
+  margin-right: auto;
+}
+}
